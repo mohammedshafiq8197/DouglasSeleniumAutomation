@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="DouglasTestSuite">
+<groups>
+<!--	<run>-->
+<!--		<include name="SearchResults"/>-->
+<!--		<include name="filterTests"/>-->
+<!--	</run>-->
+</groups>
+
+<listeners>
+<listener class-name="DouglasWebsiteAutomation.TestComponents.Listeners"/>
+</listeners>
+  <test thread-count="3" name="Search Results Test">
+    <classes>
+      <class name="DouglasWebsiteAutomation.tests.SearchResultsTests"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="3" name="Perfume Page Test">
+    <classes>
+      <class name="DouglasWebsiteAutomation.tests.PerfumeTests"/>
+    </classes>
+  </test> 
+  
+    <test thread-count="3" name="Filters Test">
+    <classes>
+      <class name="DouglasWebsiteAutomation.tests.FilterTests"/>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->

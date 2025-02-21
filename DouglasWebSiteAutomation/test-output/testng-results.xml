@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-21T16:15:41 IST" name="DouglasTestSuite" finished-at="2025-02-21T16:16:49 IST" duration-ms="68544">
+    <groups>
+      <group name="filterTest">
+        <method signature="FilterTests.testApplyFilter(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" name="testApplyFilter" class="DouglasWebsiteAutomation.tests.FilterTests"/>
+      </group> <!-- filterTest -->
+      <group name="PerfumeTest">
+        <method signature="PerfumeTests.testPerfumePage(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" name="testPerfumePage" class="DouglasWebsiteAutomation.tests.PerfumeTests"/>
+      </group> <!-- PerfumeTest -->
+      <group name="SearchResults">
+        <method signature="SearchResultsTests.testSearchPage(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" name="testSearchPage" class="DouglasWebsiteAutomation.tests.SearchResultsTests"/>
+      </group> <!-- SearchResults -->
+    </groups>
+    <test started-at="2025-02-21T16:15:41 IST" name="Perfume Page Test" finished-at="2025-02-21T16:16:12 IST" duration-ms="31606">
+      <class name="DouglasWebsiteAutomation.tests.PerfumeTests">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" started-at="2025-02-21T16:15:41 IST" name="launchApplication" finished-at="2025-02-21T16:15:53 IST" duration-ms="12353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testPerfumePage(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" started-at="2025-02-21T16:15:53 IST" name="testPerfumePage" data-provider="getData" finished-at="2025-02-21T16:15:58 IST" duration-ms="5277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoryLabel=NEU, categoryName=NEU}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPerfumePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" started-at="2025-02-21T16:15:58 IST" name="tearDown" finished-at="2025-02-21T16:15:59 IST" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" started-at="2025-02-21T16:15:59 IST" name="launchApplication" finished-at="2025-02-21T16:16:10 IST" duration-ms="11050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testPerfumePage(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" started-at="2025-02-21T16:16:10 IST" name="testPerfumePage" data-provider="getData" finished-at="2025-02-21T16:16:11 IST" duration-ms="1464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{categoryLabel=Sale, categoryName=SALE}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPerfumePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.PerfumeTests@64ec96c6]" started-at="2025-02-21T16:16:11 IST" name="tearDown" finished-at="2025-02-21T16:16:12 IST" duration-ms="628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DouglasWebsiteAutomation.tests.PerfumeTests -->
+    </test> <!-- Perfume Page Test -->
+    <test started-at="2025-02-21T16:15:41 IST" name="Search Results Test" finished-at="2025-02-21T16:16:14 IST" duration-ms="33026">
+      <class name="DouglasWebsiteAutomation.tests.SearchResultsTests">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" started-at="2025-02-21T16:15:41 IST" name="launchApplication" finished-at="2025-02-21T16:15:53 IST" duration-ms="12420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testSearchPage(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" started-at="2025-02-21T16:15:53 IST" name="testSearchPage" data-provider="getData" finished-at="2025-02-21T16:15:58 IST" duration-ms="5391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{resultItem=ACQUA DI, searchItem=armani}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" started-at="2025-02-21T16:15:58 IST" name="tearDown" finished-at="2025-02-21T16:15:59 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" started-at="2025-02-21T16:15:59 IST" name="launchApplication" finished-at="2025-02-21T16:16:10 IST" duration-ms="11513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testSearchPage(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" started-at="2025-02-21T16:16:10 IST" name="testSearchPage" data-provider="getData" finished-at="2025-02-21T16:16:13 IST" duration-ms="2580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{resultItem=Herrera, searchItem=212}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.SearchResultsTests@2f67a4d3]" started-at="2025-02-21T16:16:13 IST" name="tearDown" finished-at="2025-02-21T16:16:14 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DouglasWebsiteAutomation.tests.SearchResultsTests -->
+    </test> <!-- Search Results Test -->
+    <test started-at="2025-02-21T16:15:41 IST" name="Filters Test" finished-at="2025-02-21T16:16:49 IST" duration-ms="68544">
+      <class name="DouglasWebsiteAutomation.tests.FilterTests">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:15:41 IST" name="launchApplication" finished-at="2025-02-21T16:15:53 IST" duration-ms="12466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testApplyFilter(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:15:53 IST" name="testApplyFilter" data-provider="getData" finished-at="2025-02-21T16:16:04 IST" duration-ms="10487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dropdownIndex=1, filterName=Eau de Parfum, filterType=productType}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplyFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:04 IST" name="tearDown" finished-at="2025-02-21T16:16:04 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:04 IST" name="launchApplication" finished-at="2025-02-21T16:16:15 IST" duration-ms="10916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testApplyFilter(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:15 IST" name="testApplyFilter" data-provider="getData" finished-at="2025-02-21T16:16:21 IST" duration-ms="6292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dropdownIndex=2, filterName=adidas, filterType=brand}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplyFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:21 IST" name="tearDown" finished-at="2025-02-21T16:16:22 IST" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:22 IST" name="launchApplication" finished-at="2025-02-21T16:16:33 IST" duration-ms="10889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testApplyFilter(java.util.HashMap)[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:33 IST" name="testApplyFilter" data-provider="getData" finished-at="2025-02-21T16:16:37 IST" duration-ms="4161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{dropdownIndex=3, filterName=Unisex, filterType=gender}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplyFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:37 IST" name="tearDown" finished-at="2025-02-21T16:16:37 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:37 IST" name="launchApplication" finished-at="2025-02-21T16:16:48 IST" duration-ms="10893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="checkFilterApplied()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:48 IST" name="checkFilterApplied" finished-at="2025-02-21T16:16:48 IST" depends-on-methods="DouglasWebsiteAutomation.tests.FilterTests.testApplyFilter" duration-ms="10" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8125ebc3-4c56-4194-8d4d-e6762302c388, findElements {using=xpath, value=//button[@class='selected-facets__value']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0.1, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:debuggerAddress: 127.0.0.1:28283, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.3.0, moz:processID: 4050, moz:profile: /var/folders/zh/mx2fgrbn6y1..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:28283/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 8125ebc3-4c56-4194-8d4d-e6762302c388]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8125ebc3-4c56-4194-8d4d-e6762302c388, findElements {using=xpath, value=//button[@class='selected-facets__value']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0.1, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:debuggerAddress: 127.0.0.1:28283, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.3.0, moz:processID: 4050, moz:profile: /var/folders/zh/mx2fgrbn6y1..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:28283/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 8125ebc3-4c56-4194-8d4d-e6762302c388
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+at DouglasWebsiteAutomation.CommonComponents.CommonComponents.find_Elements(CommonComponents.java:36)
+at DouglasWebsiteAutomation.PageObjects.FilterPage.verifyFilterApplied(FilterPage.java:69)
+at DouglasWebsiteAutomation.tests.FilterTests.checkFilterApplied(FilterTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFilterApplied -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DouglasWebsiteAutomation.tests.FilterTests@6f8e8894]" started-at="2025-02-21T16:16:49 IST" name="tearDown" finished-at="2025-02-21T16:16:49 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DouglasWebsiteAutomation.tests.FilterTests -->
+    </test> <!-- Filters Test -->
+  </suite> <!-- DouglasTestSuite -->
+</testng-results>

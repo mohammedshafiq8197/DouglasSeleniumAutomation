@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-DouglasTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">DouglasTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-DouglasTestSuite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-DouglasTestSuite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-DouglasTestSuite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-DouglasTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-DouglasTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-DouglasTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-DouglasTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DouglasTestSuite" class="hide-methods failed suite-DouglasTestSuite"> (hide)</a> <!-- hide-methods failed suite-DouglasTestSuite -->
+                      <a href="#" panel-name="suite-DouglasTestSuite" class="show-methods failed suite-DouglasTestSuite"> (show)</a> <!-- show-methods failed suite-DouglasTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-DouglasTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.FilterTests" class="method navigator-link" hash-for-method="checkFilterApplied">checkFilterApplied</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DouglasTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DouglasTestSuite" class="hide-methods passed suite-DouglasTestSuite"> (hide)</a> <!-- hide-methods passed suite-DouglasTestSuite -->
+                      <a href="#" panel-name="suite-DouglasTestSuite" class="show-methods passed suite-DouglasTestSuite"> (show)</a> <!-- show-methods passed suite-DouglasTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-DouglasTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.FilterTests" class="method navigator-link" hash-for-method="testApplyFilter({dropdownIndex=2, filterName=adidas, filterType=brand})">testApplyFilter({dropdownIndex=2, filterName=adidas, filterType=brand})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.FilterTests" class="method navigator-link" hash-for-method="testApplyFilter({dropdownIndex=3, filterName=Unisex, filterType=gender})">testApplyFilter({dropdownIndex=3, filterName=Unisex, filterType=gender})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.FilterTests" class="method navigator-link" hash-for-method="testApplyFilter({dropdownIndex=1, filterName=Eau de Parfum, filterType=productType})">testApplyFilter({dropdownIndex=1, filterName=Eau de Parfum, filterType=productType})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.PerfumeTests" class="method navigator-link" hash-for-method="testPerfumePage({categoryLabel=NEU, categoryName=NEU})">testPerfumePage({categoryLabel=NEU, categoryName=NEU})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.PerfumeTests" class="method navigator-link" hash-for-method="testPerfumePage({categoryLabel=Sale, categoryName=SALE})">testPerfumePage({categoryLabel=Sale, categoryName=SALE})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.SearchResultsTests" class="method navigator-link" hash-for-method="testSearchPage({resultItem=Herrera, searchItem=212})">testSearchPage({resultItem=Herrera, searchItem=212})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DouglasTestSuite" title="DouglasWebsiteAutomation.tests.SearchResultsTests" class="method navigator-link" hash-for-method="testSearchPage({resultItem=ACQUA DI, searchItem=armani})">testSearchPage({resultItem=ACQUA DI, searchItem=armani})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DouglasTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DouglasTestSuite" class="panel DouglasTestSuite">
+          <div class="suite-DouglasTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DouglasWebsiteAutomation.tests.FilterTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFilterApplied">
+                  </a> <!-- checkFilterApplied -->
+                  <span class="method-name">checkFilterApplied</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.3.1&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8125ebc3-4c56-4194-8d4d-e6762302c388, findElements {using=xpath, value=//button[@class=&apos;selected-facets__value&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0.1, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:debuggerAddress: 127.0.0.1:28283, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.3.0, moz:processID: 4050, moz:profile: /var/folders/zh/mx2fgrbn6y1..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:28283/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 8125ebc3-4c56-4194-8d4d-e6762302c388
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+	at DouglasWebsiteAutomation.CommonComponents.CommonComponents.find_Elements(CommonComponents.java:36)
+	at DouglasWebsiteAutomation.PageObjects.FilterPage.verifyFilterApplied(FilterPage.java:69)
+	at DouglasWebsiteAutomation.tests.FilterTests.checkFilterApplied(FilterTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DouglasTestSuite-class-failed -->
+          <div class="suite-DouglasTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DouglasWebsiteAutomation.tests.SearchResultsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchPage({resultItem=Herrera, searchItem=212})">
+                  </a> <!-- testSearchPage({resultItem=Herrera, searchItem=212}) -->
+                  <span class="method-name">testSearchPage</span>
+                  <span class="parameters">({resultItem=Herrera, searchItem=212})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchPage({resultItem=ACQUA DI, searchItem=armani})">
+                  </a> <!-- testSearchPage({resultItem=ACQUA DI, searchItem=armani}) -->
+                  <span class="method-name">testSearchPage</span>
+                  <span class="parameters">({resultItem=ACQUA DI, searchItem=armani})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DouglasTestSuite-class-passed -->
+          <div class="suite-DouglasTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DouglasWebsiteAutomation.tests.FilterTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testApplyFilter({dropdownIndex=2, filterName=adidas, filterType=brand})">
+                  </a> <!-- testApplyFilter({dropdownIndex=2, filterName=adidas, filterType=brand}) -->
+                  <span class="method-name">testApplyFilter</span>
+                  <span class="parameters">({dropdownIndex=2, filterName=adidas, filterType=brand})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testApplyFilter({dropdownIndex=3, filterName=Unisex, filterType=gender})">
+                  </a> <!-- testApplyFilter({dropdownIndex=3, filterName=Unisex, filterType=gender}) -->
+                  <span class="method-name">testApplyFilter</span>
+                  <span class="parameters">({dropdownIndex=3, filterName=Unisex, filterType=gender})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testApplyFilter({dropdownIndex=1, filterName=Eau de Parfum, filterType=productType})">
+                  </a> <!-- testApplyFilter({dropdownIndex=1, filterName=Eau de Parfum, filterType=productType}) -->
+                  <span class="method-name">testApplyFilter</span>
+                  <span class="parameters">({dropdownIndex=1, filterName=Eau de Parfum, filterType=productType})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DouglasTestSuite-class-passed -->
+          <div class="suite-DouglasTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DouglasWebsiteAutomation.tests.PerfumeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPerfumePage({categoryLabel=NEU, categoryName=NEU})">
+                  </a> <!-- testPerfumePage({categoryLabel=NEU, categoryName=NEU}) -->
+                  <span class="method-name">testPerfumePage</span>
+                  <span class="parameters">({categoryLabel=NEU, categoryName=NEU})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPerfumePage({categoryLabel=Sale, categoryName=SALE})">
+                  </a> <!-- testPerfumePage({categoryLabel=Sale, categoryName=SALE}) -->
+                  <span class="method-name">testPerfumePage</span>
+                  <span class="parameters">({categoryLabel=Sale, categoryName=SALE})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DouglasTestSuite-class-passed -->
+        </div> <!-- panel DouglasTestSuite -->
+        <div panel-name="test-xml-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/mohammedshafiqurrahman/Documents/DouglasWebSiteAutomation/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;DouglasTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;DouglasWebsiteAutomation.TestComponents.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Search Results Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DouglasWebsiteAutomation.tests.SearchResultsTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search Results Test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Perfume Page Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DouglasWebsiteAutomation.tests.PerfumeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Perfume Page Test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Filters Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DouglasWebsiteAutomation.tests.FilterTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Filters Test --&gt;
+&lt;/suite&gt; &lt;!-- DouglasTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DouglasTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search Results Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Perfume Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Filters Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DouglasTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">PerfumeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPerfumePage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SearchResults</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSearchPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">filterTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testApplyFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DouglasTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DouglasTestSuite');
+function tableData_DouglasTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testApplyFilter')
+data.setCell(0, 2, 'DouglasWebsiteAutomation.tests.FilterTests')
+data.setCell(0, 3, 10487);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testApplyFilter')
+data.setCell(1, 2, 'DouglasWebsiteAutomation.tests.FilterTests')
+data.setCell(1, 3, 6292);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSearchPage')
+data.setCell(2, 2, 'DouglasWebsiteAutomation.tests.SearchResultsTests')
+data.setCell(2, 3, 5391);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testPerfumePage')
+data.setCell(3, 2, 'DouglasWebsiteAutomation.tests.PerfumeTests')
+data.setCell(3, 3, 5277);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testApplyFilter')
+data.setCell(4, 2, 'DouglasWebsiteAutomation.tests.FilterTests')
+data.setCell(4, 3, 4161);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSearchPage')
+data.setCell(5, 2, 'DouglasWebsiteAutomation.tests.SearchResultsTests')
+data.setCell(5, 3, 2580);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testPerfumePage')
+data.setCell(6, 2, 'DouglasWebsiteAutomation.tests.PerfumeTests')
+data.setCell(6, 3, 1464);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkFilterApplied')
+data.setCell(7, 2, 'DouglasWebsiteAutomation.tests.FilterTests')
+data.setCell(7, 3, 10);
+window.suiteTableData['DouglasTestSuite']= { tableData: data, tableDiv: 'times-div-DouglasTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-DouglasTestSuite">
+              </div> <!-- times-div-DouglasTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DouglasTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DouglasTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.SearchResultsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.PerfumeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.FilterTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.PerfumeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPerfumePage({categoryLabel=NEU, categoryName=NEU})</span>
+                <span class="method-start">12355 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.SearchResultsTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSearchPage({resultItem=ACQUA DI, searchItem=armani})</span>
+                <span class="method-start">12420 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.FilterTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testApplyFilter({dropdownIndex=1, filterName=Eau de Parfum, filterType=productType})</span>
+                <span class="method-start">12467 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.PerfumeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17636 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.SearchResultsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">18352 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.PerfumeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">18380 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.FilterTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">23480 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.PerfumeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testPerfumePage({categoryLabel=Sale, categoryName=SALE})</span>
+                <span class="method-start">29430 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.SearchResultsTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSearchPage({resultItem=Herrera, searchItem=212})</span>
+                <span class="method-start">29865 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.PerfumeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30895 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.SearchResultsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32446 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DouglasWebsiteAutomation.tests.FilterTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testApplyFilter({dropdownIndex=2, filterName=adidas, filterType=brand})</span>
+                <span class="method-start">34397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40690 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">41239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testApplyFilter({dropdownIndex=3, filterName=Unisex, filterType=gender})</span>
+                <span class="method-start">52129 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">56868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkFilterApplied</span>
+                <span class="method-start">67762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68068 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

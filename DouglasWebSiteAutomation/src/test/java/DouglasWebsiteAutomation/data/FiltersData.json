@@ -1,0 +1,19 @@
+[
+	{
+		"dropdownIndex":"1",
+		"filterType":"productType",
+		"filterName": "Eau de Parfum"		
+	},
+	
+	{
+		"dropdownIndex":"2",
+		"filterType": "brand",
+	    "filterName": "adidas"
+	},
+	
+	{
+		"dropdownIndex":"3",
+		"filterType": "gender",
+	    "filterName": "Unisex"
+	}
+]
