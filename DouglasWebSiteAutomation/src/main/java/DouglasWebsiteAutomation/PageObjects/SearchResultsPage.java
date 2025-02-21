@@ -11,8 +11,6 @@ public class SearchResultsPage extends BasePage {
 	
 	public WebDriver driver;
 	CommonComponents commonComponents;
-	String searchItem;
-	String resultItem;
 	
 	//private By searchInputText = By.xpath("(//div[contains(@class,'typeAhead-search')])[1])");
 	 private By searchInput = By.id("typeAhead-input"); 
@@ -25,8 +23,6 @@ public class SearchResultsPage extends BasePage {
 	    {
 	    	super(driver);
 	        this.driver = driver;
-//	        this.searchItem = searchItem;
-//	        this.resultItem = resultItem;
 	        this.searchResultItem = By.xpath(("(//div[contains(@data-testid,'text-suggest')]//*[contains(text(),'"+ searchItem+"')])[1]"));
 	        this.resultsContainer= By.xpath("(//*[contains(text(),'"+ resultItem+"')])[1]");
 	        this.commonComponents = new CommonComponents(this.driver);
