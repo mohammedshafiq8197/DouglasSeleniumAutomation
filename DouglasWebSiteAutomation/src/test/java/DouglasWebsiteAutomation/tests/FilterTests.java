@@ -26,15 +26,16 @@ public class FilterTests extends DriverFactory {
                     
         
         // Verify that the filter is applied
+        Assert.assertTrue(filterPage.verifyFilterApplied(), "Filter tags  should be applied");   
         Assert.assertTrue(filterPage.VerifyProductDisplay(filterName,input.get("filterType")), "Product '" + filterName + "' should be displayed");
     }
     
-    @Test(dependsOnMethods = {"testApplyFilter"})
-    public void checkFilterApplied()
-    {
-    	 Assert.assertTrue(filterPage.verifyFilterApplied(), "Filter tags  should be applied");   
-    }
-    
+//    @Test(dependsOnMethods = {"testApplyFilter"})
+//    public void checkFilterApplied()
+//    {
+//    	 Assert.assertTrue(filterPage.verifyFilterApplied(), "Filter tags  should be applied");   
+//    }
+//    
     @DataProvider
     public Object[][] getData() throws IOException
     {
