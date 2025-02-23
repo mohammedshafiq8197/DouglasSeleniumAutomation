@@ -26,7 +26,7 @@ public class CommonComponents{
 	
 	public WebElement find_Element(By by)
 	{
-		System.out.println("the driver is"+this.driver);
+		
 		WebElement element = this.driver.findElement(by);
 		return element;
 	}
