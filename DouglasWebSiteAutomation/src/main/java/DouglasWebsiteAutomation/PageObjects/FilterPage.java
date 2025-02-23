@@ -66,6 +66,7 @@ public class FilterPage extends BasePage {
 	
 	public Boolean verifyFilterApplied()
 	{
+		//scrollDown();
 		List<WebElement> filterList = commonCommponents.find_Elements(filterTags);
 		 
 		 if(filterList.size() > 0)
