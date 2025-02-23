@@ -55,8 +55,8 @@ public class CommonComponents{
 
 		WebDriverWait wait = new WebDriverWait(this.driver, Duration.ofSeconds(5));
 		
-	WebElement acceptAllButton =	wait.until(ExpectedConditions.elementToBeClickable(findBy));
-	  acceptAllButton.click();
+	        WebElement acceptAllButton = wait.until(ExpectedConditions.elementToBeClickable(findBy));
+	  
 
 	}
 	
